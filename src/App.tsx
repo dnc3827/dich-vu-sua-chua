@@ -95,7 +95,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16 items-center">
             <div className="flex items-center gap-2">
-              <div className="bg-blue-600 p-2 rounded-lg">
+              <div className="bg-orange-600 p-2 rounded-lg">
                 <Wrench className="text-white w-6 h-6" />
               </div>
               <span className="text-xl font-bold tracking-tight text-slate-900">ProFix</span>
@@ -103,11 +103,11 @@ export default function App() {
             
             {/* Desktop Menu */}
             <div className="hidden md:flex items-center gap-8">
-              <a href="#services" className="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors">Dịch vụ</a>
-              <a href="#about" className="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors">Về chúng tôi</a>
+              <a href="#services" className="text-sm font-medium text-slate-600 hover:text-orange-600 transition-colors">Dịch vụ</a>
+              <a href="#about" className="text-sm font-medium text-slate-600 hover:text-orange-600 transition-colors">Về chúng tôi</a>
               <button 
                 onClick={scrollToForm}
-                className="bg-blue-600 text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-blue-700 transition-all shadow-md hover:shadow-lg active:scale-95"
+                className="bg-orange-600 text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-orange-700 transition-all shadow-md hover:shadow-lg active:scale-95"
               >
                 Đặt lịch ngay
               </button>
@@ -132,7 +132,7 @@ export default function App() {
             <a href="#services" className="block text-slate-600 font-medium" onClick={() => setIsMenuOpen(false)}>Dịch vụ</a>
             <button 
               onClick={scrollToForm}
-              className="w-full bg-blue-600 text-white px-5 py-3 rounded-xl text-center font-semibold"
+              className="w-full bg-orange-600 text-white px-5 py-3 rounded-xl text-center font-semibold"
             >
               Đặt lịch ngay
             </button>
@@ -148,12 +148,12 @@ export default function App() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <span className="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest text-blue-600 uppercase bg-blue-50 rounded-full">
+            <span className="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest text-orange-600 uppercase bg-orange-50 rounded-full">
               Dịch vụ sửa chữa tại nhà 24/7
             </span>
             <h1 className="text-5xl md:text-7xl font-extrabold text-slate-900 mb-6 tracking-tight leading-tight">
               Sửa Chữa Mọi Thứ <br />
-              <span className="text-blue-600">Nhanh Chóng & Uy Tín</span>
+              <span className="text-orange-600">Nhanh Chóng & Uy Tín</span>
             </h1>
             <p className="text-lg text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed">
               Đội ngũ kỹ thuật viên chuyên nghiệp, có mặt sau 30 phút. Cam kết chất lượng, bảo hành dài hạn cho mọi dịch vụ.
@@ -161,7 +161,7 @@ export default function App() {
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <button 
                 onClick={scrollToForm}
-                className="px-8 py-4 bg-blue-600 text-white rounded-2xl font-bold text-lg hover:bg-blue-700 transition-all shadow-xl shadow-blue-200 flex items-center justify-center gap-2 group"
+                className="px-8 py-4 bg-orange-600 text-white rounded-2xl font-bold text-lg hover:bg-orange-700 transition-all shadow-xl shadow-orange-200 flex items-center justify-center gap-2 group"
               >
                 Đặt Lịch Hẹn
                 <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -170,7 +170,7 @@ export default function App() {
                 href="tel:0123456789"
                 className="px-8 py-4 bg-white text-slate-900 border border-slate-200 rounded-2xl font-bold text-lg hover:bg-slate-50 transition-all flex items-center justify-center gap-2"
               >
-                <Phone className="w-5 h-5 text-blue-600" />
+                <Phone className="w-5 h-5 text-orange-600" />
                 0123.456.789
               </a>
             </div>
@@ -206,14 +206,14 @@ export default function App() {
               <motion.div 
                 key={i}
                 whileHover={{ y: -10 }}
-                className="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-blue-200 hover:shadow-xl transition-all"
+                className="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-orange-200 hover:shadow-xl transition-all"
               >
                 <div className="mb-6">{service.icon}</div>
                 <h3 className="text-xl font-bold text-slate-900 mb-3">{service.title}</h3>
                 <p className="text-slate-600 text-sm mb-6 leading-relaxed">{service.description}</p>
                 <div className="flex items-center justify-between">
-                  <span className="text-blue-600 font-bold">{service.price}</span>
-                  <button onClick={scrollToForm} className="text-slate-400 hover:text-blue-600 transition-colors">
+                  <span className="text-orange-600 font-bold">{service.price}</span>
+                  <button onClick={scrollToForm} className="text-slate-400 hover:text-orange-600 transition-colors">
                     <ChevronRight className="w-6 h-6" />
                   </button>
                 </div>
@@ -225,11 +225,11 @@ export default function App() {
 
       {/* Why Choose Us */}
       <section className="py-24 bg-slate-900 text-white overflow-hidden relative">
-        <div className="absolute top-0 right-0 w-1/2 h-full bg-blue-600/10 blur-3xl rounded-full translate-x-1/2"></div>
+        <div className="absolute top-0 right-0 w-1/2 h-full bg-orange-600/10 blur-3xl rounded-full translate-x-1/2"></div>
         <div className="max-w-7xl mx-auto px-4 relative z-10">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-4xl font-bold mb-8 leading-tight">Tại Sao Nên Chọn <br /><span className="text-blue-500">ProFix?</span></h2>
+              <h2 className="text-4xl font-bold mb-8 leading-tight">Tại Sao Nên Chọn <br /><span className="text-orange-500">ProFix?</span></h2>
               <div className="space-y-6">
                 {[
                   { title: "Kỹ thuật viên tay nghề cao", desc: "Đều có trên 5 năm kinh nghiệm thực chiến." },
@@ -239,7 +239,7 @@ export default function App() {
                 ].map((item, i) => (
                   <div key={i} className="flex gap-4">
                     <div className="mt-1">
-                      <CheckCircle2 className="text-blue-500 w-6 h-6" />
+                      <CheckCircle2 className="text-orange-500 w-6 h-6" />
                     </div>
                     <div>
                       <h4 className="font-bold text-lg">{item.title}</h4>
@@ -251,7 +251,7 @@ export default function App() {
             </div>
             <div className="bg-white/5 backdrop-blur-lg p-10 rounded-3xl border border-white/10">
               <div className="flex items-center gap-4 mb-8">
-                <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
+                <div className="w-12 h-12 bg-orange-600 rounded-full flex items-center justify-center">
                   <Clock className="text-white" />
                 </div>
                 <div>
@@ -259,7 +259,7 @@ export default function App() {
                   <p className="text-xl font-bold">Thứ 2 - Chủ Nhật (07:00 - 22:00)</p>
                 </div>
               </div>
-              <div className="p-6 bg-blue-600 rounded-2xl">
+              <div className="p-6 bg-orange-600 rounded-2xl">
                 <p className="text-sm font-bold uppercase tracking-widest mb-2 opacity-80">Hotline khẩn cấp 24/7</p>
                 <p className="text-3xl font-black">0123.456.789</p>
               </div>
@@ -285,7 +285,7 @@ export default function App() {
                     required
                     type="text" 
                     placeholder="Nguyễn Văn A"
-                    className="w-full px-6 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                    className="w-full px-6 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all"
                     value={formData.name}
                     onChange={(e) => setFormData({...formData, name: e.target.value})}
                   />
@@ -296,7 +296,7 @@ export default function App() {
                     required
                     type="tel" 
                     placeholder="09xx xxx xxx"
-                    className="w-full px-6 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                    className="w-full px-6 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all"
                     value={formData.phone}
                     onChange={(e) => setFormData({...formData, phone: e.target.value})}
                   />
@@ -311,7 +311,7 @@ export default function App() {
                     required
                     type="text" 
                     placeholder="Số nhà, tên đường, quận/huyện..."
-                    className="w-full pl-14 pr-6 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                    className="w-full pl-14 pr-6 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all"
                     value={formData.address}
                     onChange={(e) => setFormData({...formData, address: e.target.value})}
                   />
@@ -321,7 +321,7 @@ export default function App() {
               <div className="space-y-2">
                 <label className="text-sm font-bold text-slate-700 ml-1">Dịch vụ cần sửa chữa</label>
                 <select 
-                  className="w-full px-6 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all appearance-none"
+                  className="w-full px-6 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all appearance-none"
                   value={formData.service}
                   onChange={(e) => setFormData({...formData, service: e.target.value})}
                 >
@@ -337,7 +337,7 @@ export default function App() {
                 disabled={status === 'loading'}
                 type="submit"
                 className={`w-full py-5 rounded-2xl font-bold text-lg shadow-xl transition-all flex items-center justify-center gap-3 ${
-                  status === 'loading' ? 'bg-slate-400 cursor-not-allowed' : 'bg-blue-600 hover:bg-blue-700 text-white active:scale-[0.98]'
+                  status === 'loading' ? 'bg-slate-400 cursor-not-allowed' : 'bg-orange-600 hover:bg-orange-700 text-white active:scale-[0.98]'
                 }`}
               >
                 {status === 'loading' ? 'Đang gửi...' : 'Xác Nhận Đặt Lịch'}
@@ -368,16 +368,16 @@ export default function App() {
       <footer className="py-12 bg-white border-t border-slate-200">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <div className="flex items-center justify-center gap-2 mb-6">
-            <div className="bg-blue-600 p-1.5 rounded-lg">
+            <div className="bg-orange-600 p-1.5 rounded-lg">
               <Wrench className="text-white w-5 h-5" />
             </div>
             <span className="text-lg font-bold tracking-tight text-slate-900">ProFix</span>
           </div>
           <p className="text-slate-500 text-sm mb-8">© 2026 ProFix Service. Tất cả quyền được bảo lưu.</p>
           <div className="flex justify-center gap-6">
-            <a href="#" className="text-slate-400 hover:text-blue-600 transition-colors">Facebook</a>
-            <a href="#" className="text-slate-400 hover:text-blue-600 transition-colors">Zalo</a>
-            <a href="#" className="text-slate-400 hover:text-blue-600 transition-colors">YouTube</a>
+            <a href="#" className="text-slate-400 hover:text-orange-600 transition-colors">Facebook</a>
+            <a href="#" className="text-slate-400 hover:text-orange-600 transition-colors">Zalo</a>
+            <a href="#" className="text-slate-400 hover:text-orange-600 transition-colors">YouTube</a>
           </div>
         </div>
       </footer>
